@@ -33,6 +33,7 @@ Parâmetros:
 ## Credenciais
 
 Nenhuma chave real está embutida no workflow ou no repositório.
+POR SEGURANÇA As credenciais são configuradas apenas no ambiente do n8n e não fazem parte do arquivo JSON versionado no repositório.
 
 OPENWEATHER_API_KEY: configure como variável de ambiente do n8n. O workflow já utiliza {{ $env.OPENWEATHER_API_KEY }} no nó da OpenWeather.
 TELEGRAM_BOT_TOKEN: configure no n8n em Credentials → Telegram API e associe essa credencial aos nós do Telegram.
