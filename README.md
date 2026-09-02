@@ -1,7 +1,7 @@
 # projeto-n8n-clima-c-gemini
-Flow feito no n8n para receber pedido no Telegram, com nome de cidade, e responder com o clima do dia, consultando a OpenWeather, usando Gemini para personalisar a mensagem e devolvendo a temperatura atual.
+Flow feito no n8n para receber pedido no Telegram, com nome de cidade, e responder com o clima do dia, consultando a OpenWeather, usando Gemini para personalizar a mensagem e devolvendo a temperatura atual.
 
-Esta versão também inclui o uso de Google Gemini para melhorar a resposta, sendo esse uso opcional (possivel de configurar com uma variável, com fallback determinístico obrigatório).
+Esta versão também inclui o uso de Google Gemini para melhorar a resposta, sendo esse uso opcional (possível de configurar com uma variável, com fallback determinístico obrigatório).
 
 ## Estrutura
 
@@ -83,6 +83,7 @@ Erro:
 5. Configure `OPENWEATHER_API_KEY`.
 6. Teste inicialmente com Gemini desativado.
 7. Para testar IA, configure a credencial Gemini e altere `usar_gemini` para `true`.
+8. Depois de configurar tudo, ativar o workflow e mandar uma mensagem para o bot no Telegram, por exemplo Belo Horizonte,MG,BR, esperando uma resposta com a temperatura atual.
 
 ## Testes recomendados
 
