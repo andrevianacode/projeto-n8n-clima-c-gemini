@@ -32,8 +32,7 @@ Parâmetros:
 
 ## Credenciais
 
-Nenhuma chave real está embutida no workflow ou no repositório.
-POR SEGURANÇA As credenciais são configuradas apenas no ambiente do n8n e não fazem parte do arquivo JSON versionado no repositório.
+Nenhuma chave real está embutida no workflow ou no repositório. Por segurança, a chave da OpenWeather é configurada como variável de ambiente do n8n, enquanto o token do Telegram é configurado em Credentials → Telegram API.
 
 OPENWEATHER_API_KEY: configure como variável de ambiente do n8n. O workflow já utiliza {{ $env.OPENWEATHER_API_KEY }} no nó da OpenWeather.
 TELEGRAM_BOT_TOKEN: configure no n8n em Credentials → Telegram API e associe essa credencial aos nós do Telegram.
@@ -86,6 +85,10 @@ Erro:
 7. Para testar IA, configure a credencial Gemini e altere `usar_gemini` para `true`.
 
 ## Testes recomendados
+
+Após configurar as credenciais, ative o workflow e envie uma mensagem para o bot no Telegram, por exemplo: Belo Horizonte,MG,BR.
+
+O bot deverá responder com uma mensagem como 🌤️ A temperatura em Belo Horizonte é de 25°C., utilizando a temperatura atual retornada pela OpenWeather.
 
 - São Paulo,SP,BR
 - Belo Horizonte,MG,BR
